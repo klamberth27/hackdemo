@@ -24,5 +24,9 @@ module Pinteresting
    
 # Required for Heroku
     config.active_record.raise_in_transactional_callbacks = true
+
+    #was not in the video but was on Step4 text of Day 14 Lesson 2
+    config.assets.initialize_on_precompile = false
+
   end
 end
