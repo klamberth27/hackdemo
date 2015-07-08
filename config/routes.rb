@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :pins
   devise_for :users
-  root "pages#home"
+  # root "pages#home"  # Changing root path to display pins on home page
+  root "pins#index"
   get "about" => "pages#about"  # creates about_path
   get "products" => "pages#products"  # creates products_path
 
